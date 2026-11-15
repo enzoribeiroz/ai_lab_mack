@@ -1,3 +1,25 @@
+# =============================================================================
+# Projeto : Agente Especialista em GRC - RAG + LLM local sobre o COSO ERM 2017
+# Curso   : Sistemas de Informação - Inteligência Artificial (7ºK, noite)
+# Prof.   : Dr. Leandro Zerbinatti
+# Inst.   : Universidade Presbiteriana Mackenzie - Faculdade de Computação e Informática
+#
+# Integrantes:
+#   Guilherme Martins Silva - RA 10417140 - 10417140@mackenzista.com.br
+#   Enzo Ribeiro            - RA 10418262 - 10418262@mackenzista.com.br
+#   Pedro Nogueira Ribeiro  - RA 10324924 - 10324924@mackenzista.com.br
+#
+# Arquivo : llama/memory_support/memory_support.py
+# Síntese : Memória conversacional persistente. Armazena pares pergunta/resposta
+#           em uma coleção Chroma (embeddings multilingual-e5-small), recupera
+#           as memórias mais próximas da pergunta atual para o prompt e aciona
+#           a limpeza/deduplicação e o limite máximo de memórias.
+#
+# Histórico de alterações:
+#   2026-02-26 - Guilherme Martins Silva - Versão inicial do módulo de memória.
+#   2026-02-26 - Guilherme Martins Silva - Ajustes no fluxo de inclusão e recuperação de memórias (3 commits).
+#   2026-11-15 - Enzo Ribeiro - Cabeçalho padronizado (integrantes, síntese e histórico).
+# =============================================================================
 # memory_support.py
 import os
 import time

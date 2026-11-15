@@ -1,0 +1,17 @@
+pergunta,Aleatório,BM25 (pergunta PT),BM25 (pergunta EN),Denso (bge-m3),MMR,Denso + re-ranking,MMR + re-ranking (agente)
+Qual é a definição de Enterprise Risk Management?,2.0,1.0,1.0,1.0,1.0,1.0,1.0
+Quantos e quais sãos componentes que estruturam o framework (ERM)?,5.0,,6.0,4.0,,3.0,
+O ERM deve ser integrado à estratégia?,,,1.0,3.0,,3.0,4.0
+O ERM é um departamento separado?,,,2.0,1.0,1.0,1.0,2.0
+Qual a importancia da supervisão em cima do Enterprise Risk Management?,4.0,,,,,6.0,2.0
+Qual é o objetivo do ERM em relação ao valor?,4.0,,1.0,2.0,,1.0,1.0
+O ERM reduz surpresas organizacionais?,,6.0,1.0,1.0,1.0,1.0,1.0
+A cultura faz parte do ERM?,1.0,,2.0,1.0,1.0,2.0,2.0
+Como o ERM contribui para o alinhamento entre performance e risco?,,,3.0,2.0,,1.0,
+Qual é a relação entre ERM e resiliência organizacional?,,,1.0,1.0,1.0,1.0,1.0
+O ERM ajuda a identificar oportunidades além de riscos?,,,,,,,
+Qual o papel do componente Review and Revision?,3.0,1.0,2.0,2.0,2.0,1.0,1.0
+Qual o papel da comunicação no ERM?,,,3.0,1.0,1.0,1.0,1.0
+Como o ERM auxilia na alocação de recursos?,,,1.0,,4.0,3.0,3.0
+Como o ERM ajuda a gerenciar riscos em toda a entidade?,,,1.0,1.0,1.0,1.0,1.0
+Qual é a definição de risco segundo o framework?,,,,1.0,1.0,1.0,1.0

@@ -1,9 +1,36 @@
+# =============================================================================
+# Projeto : Agente Especialista em GRC - RAG + LLM local sobre o COSO ERM 2017
+# Curso   : Sistemas de Informação - Inteligência Artificial (7ºK, noite)
+# Prof.   : Dr. Leandro Zerbinatti
+# Inst.   : Universidade Presbiteriana Mackenzie - Faculdade de Computação e Informática
+#
+# Integrantes:
+#   Guilherme Martins Silva - RA 10417140 - 10417140@mackenzista.com.br
+#   Enzo Ribeiro            - RA 10418262 - 10418262@mackenzista.com.br
+#   Pedro Nogueira Ribeiro  - RA 10324924 - 10324924@mackenzista.com.br
+#
+# Arquivo : llama/RAG/BuildVectorStore.py
+# Síntese : Pipeline de ingestão da base de conhecimento. Carrega os .txt do
+#           corpus, segmenta por seções, divide em chunks por tokens (tokenizer
+#           do BAAI/bge-m3), remove duplicatas (hash SHA-256 e similaridade
+#           semântica > 0,95) e persiste os embeddings em um banco Chroma.
+#           Também expõe build_chunks() para os experimentos de tamanho de chunk.
+#
+# Histórico de alterações:
+#   2026-02-26 - Guilherme Martins Silva - Versão inicial do pipeline de ingestão.
+#   2026-02-26 - Guilherme Martins Silva - Comentários da função de normalização.
+#   2026-11-15 - Enzo Ribeiro - Caminhos padrão relativos ao módulo, seleção
+#                automática de dispositivo, chunk_size/chunk_overlap/cleaner
+#                configuráveis e método build_chunks() (experimentos da N2);
+#                cabeçalho padronizado.
+# =============================================================================
 import os
 import logging
 import hashlib
 import re
 import unicodedata
 import numpy as np
+import torch
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -21,19 +48,34 @@ class PDFVectorStore:
 
     def __init__(
         self,
-        docs_path="docs_uploader/documents_txt",
-        persist_dir="db",
-        embedding_model="BAAI/bge-m3"
+        docs_path=None,
+        persist_dir=None,
+        embedding_model="BAAI/bge-m3",
+        chunk_size=400,
+        chunk_overlap=80,
+        text_cleaner=None,
+        device=None
     ):
 
-        self.docs_path = docs_path
-        self.persist_dir = persist_dir
+        # Caminhos padrão relativos a esta pasta (llama/RAG), independentes do cwd
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        self.docs_path = docs_path or os.path.join(base_dir, "docs_uploader", "documents_txt")
+        self.persist_dir = persist_dir or os.path.join(base_dir, "db")
+
+        # Parâmetros de segmentação (padrão = configuração usada no índice persistido)
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+
+        # Função opcional de limpeza aplicada ao texto bruto antes da segmentação
+        self.text_cleaner = text_cleaner
+
+        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
 
         log.info("🚀 Carregando embeddings...")
         self.embeddings = HuggingFaceEmbeddings(
             model_name=embedding_model,
-            model_kwargs={"device": "cuda"},
-            encode_kwargs={"normalize_embeddings": True}
+            model_kwargs={"device": self.device},
+            encode_kwargs={"normalize_embeddings": True, "batch_size": 8}  # lote pequeno: cabe em GPUs de 6 GB
         )
 
         self.tokenizer = AutoTokenizer.from_pretrained(embedding_model)
@@ -67,7 +109,8 @@ class PDFVectorStore:
     # BUILD
     # ==================================================
 
-    def _build_db(self):
+    def build_chunks(self):
+        """Executa todo o pré-processamento e devolve os chunks finais (sem persistir)."""
 
         docs = self._load_files()
         docs = self._split_by_sections(docs)
@@ -76,6 +119,12 @@ class PDFVectorStore:
 
         chunks = self._hash_dedup(chunks)
         chunks = self._semantic_dedup(chunks)
+        return chunks
+
+
+    def _build_db(self):
+
+        chunks = self.build_chunks()
 
         log.info("🧠 Gerando embeddings + salvando Chroma...")
 
@@ -115,6 +164,8 @@ class PDFVectorStore:
             loaded = loader.load()
 
             for i, d in enumerate(loaded):
+                if self.text_cleaner is not None:
+                    d.page_content = self.text_cleaner(d.page_content)
                 d.metadata["source"] = file
                 d.metadata["doc_id"] = f"{file}_{i}"
 
@@ -176,8 +227,8 @@ class PDFVectorStore:
 
         splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
             tokenizer=self.tokenizer,
-            chunk_size=400,
-            chunk_overlap=80,
+            chunk_size=self.chunk_size,
+            chunk_overlap=self.chunk_overlap,
             separators=[
                 "\n\n", "\n", ".", "•", "-", " "
             ]

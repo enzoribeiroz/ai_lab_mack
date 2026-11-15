@@ -1,3 +1,24 @@
+# =============================================================================
+# Projeto : Agente Especialista em GRC - RAG + LLM local sobre o COSO ERM 2017
+# Curso   : Sistemas de Informação - Inteligência Artificial (7ºK, noite)
+# Prof.   : Dr. Leandro Zerbinatti
+# Inst.   : Universidade Presbiteriana Mackenzie - Faculdade de Computação e Informática
+#
+# Integrantes:
+#   Guilherme Martins Silva - RA 10417140 - 10417140@mackenzista.com.br
+#   Enzo Ribeiro            - RA 10418262 - 10418262@mackenzista.com.br
+#   Pedro Nogueira Ribeiro  - RA 10324924 - 10324924@mackenzista.com.br
+#
+# Arquivo : llama/memory_support/memory_cleaner.py
+# Síntese : Filtra memórias curtas/ruidosas e remove memórias semanticamente
+#           duplicadas (similaridade de cosseno >= 0,95 entre embeddings).
+#
+# Histórico de alterações:
+#   2026-02-26 - Guilherme Martins Silva - Versão inicial do limpador de memórias.
+#   2026-02-26 - Guilherme Martins Silva - Limiar de similaridade elevado para 0,95.
+#   2026-02-26 - Guilherme Martins Silva - Ajustes gerais.
+#   2026-11-15 - Enzo Ribeiro - Cabeçalho padronizado (integrantes, síntese e histórico).
+# =============================================================================
 # memory_cleaner.py
 import numpy as np
 from typing import List, Tuple, Optional
