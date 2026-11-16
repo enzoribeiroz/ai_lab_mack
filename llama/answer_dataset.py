@@ -23,6 +23,7 @@
 #
 # Histórico de alterações:
 #   2026-11-15 - Enzo Ribeiro - Versão inicial (31 perguntas + função de nota).
+#   2026-11-16 - Enzo Ribeiro - Amplia os sinais de abstenção ("não encontrei").
 # =============================================================================
 import unicodedata
 
@@ -90,7 +91,12 @@ COMPONENT_PT = {
     "Information, Communication, and Reporting": "Informação, Comunicação e Relato (Information, Communication, and Reporting)",
 }
 
-ABSTAIN_TERMS = [["nao encontrad", "not found", "nao ha informac", "nao possuo informac", "nao contem"]]
+# Sinais de abstenção. Observação: uma resposta que se abstém e DEPOIS responde mesmo assim
+# (ex.: "não encontrei..., no entanto...") também recebe nota 1 aqui; esses casos são
+# discutidos manualmente no relatório.
+ABSTAIN_TERMS = [["nao encontr", "not found", "nao ha informac", "nao possuo informac", "nao contem",
+                  "nao tenho informac", "nao foi possivel encontrar", "nao esta no contexto",
+                  "fora do escopo"]]
 
 
 def _component_of(n):

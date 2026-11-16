@@ -1,0 +1,5 @@
+categoria,perguntas,nota_media,respostas_completas,perplexidade_media,tempo_medio_s
+componentes,1,0.4,0,1.168,12.0
+principio,20,0.559,6,1.267,4.46
+principios_do_componente,5,0.513,1,1.203,3.78
+fora_do_escopo,5,0.0,0,1.178,7.7

@@ -82,7 +82,30 @@ Em GPUs com menos de 8 GB, o `main.ipynb` passa sozinho os embeddings e o re-ran
 
 ## Resultados principais
 
-_Em atualização: os experimentos da N2 estão em `llama/experimentos_N2.ipynb` e os números em `llama/resultados/`._
+Gerados por `llama/experimentos_N2.ipynb` (CSVs e figuras em `llama/resultados/`). Análise completa na seção 7 do relatório.
+
+**Recuperação** (16 perguntas em português, 6 trechos por pergunta). Colunas "tolerante" com threshold 0,77 e "estrito" com threshold 0,85:
+
+| Recuperador | Hit Rate (tolerante) | MRR (tolerante) | Hit Rate (estrito) | MRR (estrito) |
+|---|---|---|---|---|
+| Aleatório | 0,38 | 0,16 | 0,12 | 0,02 |
+| BM25 (pergunta em PT) | 0,19 | 0,14 | 0,12 | 0,04 |
+| BM25 (pergunta traduzida para EN) | 0,81 | 0,58 | 0,31 | 0,20 |
+| Denso (bge-m3) | 0,81 | 0,63 | 0,25 | 0,18 |
+| Denso + re-ranking | 0,94 | 0,73 | 0,56 | 0,30 |
+| **MMR + re-ranking (agente)** | **0,81** | **0,63** | **0,50** | **0,32** |
+
+- A busca semântica supera a lexical. Com as perguntas em português, o BM25 fica abaixo do acaso, porque o corpus está em inglês.
+- O re-ranking com cross-encoder é a etapa que mais agrega: dobra a taxa de acerto do trecho exato.
+- O MMR não trouxe ganho neste corpus. Denso + re-ranking foi melhor.
+- Chunks de 400 tokens são o melhor compromisso entre 200 (mais precisos, menor cobertura) e 800 (maior cobertura, pior MRR). A limpeza do texto não melhorou a recuperação.
+
+**Respostas do LLM** (31 perguntas, memória desligada):
+
+- As respostas cobriram em média 54% dos conceitos esperados. O erro mais comum é confundir o número do princípio, porque o trecho "Principle N" só foi recuperado em 10 das 20 perguntas.
+- Fora do escopo: o agente se absteve corretamente em parte das 5 perguntas e inventou respostas nas demais.
+- A perplexidade ficou entre 1,08 e 1,36 e **não se correlacionou** com a qualidade da resposta (Spearman ≈ 0). Ela não serve, sozinha, como indicador de confiança.
+- Tempo médio de resposta: cerca de 5 s numa RTX 4050 de 6 GB.
 
 ## Cabeçalho e histórico
 
