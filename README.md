@@ -32,8 +32,6 @@ O documento não contém dados pessoais. O texto do COSO é protegido por direit
 ├── main.ipynb                     # demonstração do agente (pergunta, acompanhamento, fora do escopo)
 ├── EDA_COSO_ERM.ipynb             # análise exploratória do corpus (N1)
 ├── requirements.txt
-├── MANUAL_DE_USO.pdf              # passo a passo de acesso ao Llama no HuggingFace
-├── Sistema_Especialista_GRC_COSO_ERM_2017.docx-3.pdf   # documentação técnica
 └── llama/
     ├── call_llama.py              # orquestrador: memória + RAG + Llama + perplexidade
     ├── perplexity.py              # log-probabilidade média e perplexidade
@@ -65,7 +63,7 @@ pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 ```
 
-O repositório oficial `meta-llama/Llama-3.2-3B-Instruct` exige que você aceite a licença no HuggingFace e faça `hf auth login` (veja o `MANUAL_DE_USO.pdf`). A alternativa é usar o espelho público com os mesmos pesos:
+O repositório oficial `meta-llama/Llama-3.2-3B-Instruct` exige que você aceite a licença no HuggingFace e faça `hf auth login`. A alternativa é usar o espelho público com os mesmos pesos:
 
 ```bash
 export LLAMA_MODEL_ID=unsloth/Llama-3.2-3B-Instruct
