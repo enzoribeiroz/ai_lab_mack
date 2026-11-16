@@ -102,7 +102,7 @@ Gerados por `llama/experimentos_N2.ipynb` (CSVs e figuras em `llama/resultados/`
 
 **Respostas do LLM** (31 perguntas, memória desligada):
 
-- As respostas cobriram em média 54% dos conceitos esperados. O erro mais comum é confundir o número do princípio, porque o trecho "Principle N" só foi recuperado em 10 das 20 perguntas.
+- As respostas cobriram em média 55% dos conceitos esperados. O erro mais comum é confundir o número do princípio, porque o trecho "Principle N" só foi recuperado em 10 das 20 perguntas.
 - Fora do escopo: o agente se absteve corretamente em parte das 5 perguntas e inventou respostas nas demais.
 - A perplexidade ficou entre 1,08 e 1,36 e **não se correlacionou** com a qualidade da resposta (Spearman ≈ 0). Ela não serve, sozinha, como indicador de confiança.
 - Tempo médio de resposta: cerca de 5 s numa RTX 4050 de 6 GB.

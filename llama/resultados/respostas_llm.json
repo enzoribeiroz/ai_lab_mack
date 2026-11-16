@@ -9,7 +9,7 @@
     "perplexidade": 1.1683869361877441,
     "logprob_medio": -0.15562407672405243,
     "tokens_gerados": 512,
-    "segundos": 12.0,
+    "segundos": 11.9,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
@@ -30,7 +30,7 @@
     "perplexidade": 1.2161262035369873,
     "logprob_medio": -0.19567054510116577,
     "tokens_gerados": 289,
-    "segundos": 7.0,
+    "segundos": 6.9,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
@@ -51,7 +51,7 @@
     "perplexidade": 1.2063648700714111,
     "logprob_medio": -0.18761157989501953,
     "tokens_gerados": 321,
-    "segundos": 7.9,
+    "segundos": 7.5,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
@@ -93,7 +93,7 @@
     "perplexidade": 1.2533962726593018,
     "logprob_medio": -0.22585691511631012,
     "tokens_gerados": 203,
-    "segundos": 5.2,
+    "segundos": 5.1,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
@@ -114,7 +114,7 @@
     "perplexidade": 1.2905133962631226,
     "logprob_medio": -0.25504010915756226,
     "tokens_gerados": 210,
-    "segundos": 5.5,
+    "segundos": 5.2,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
@@ -156,7 +156,7 @@
     "perplexidade": 1.249335765838623,
     "logprob_medio": -0.22261203825473785,
     "tokens_gerados": 203,
-    "segundos": 5.1,
+    "segundos": 5.2,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
@@ -172,20 +172,20 @@
     "categoria": "principio",
     "pergunta": "O que diz o Princípio 8 do COSO ERM 2017 e a qual componente ele pertence?",
     "referencia": "Principle 8: Evaluates Alternative Strategies (Strategy and Objective-Setting)",
-    "resposta": "O Princípio 8 do COSO ERM 2017 é \"Review and Revision\". Ele pertence à componente \"Governance and Culture\", que é responsável por estabelecer e manter um ambiente de governança e cultura que apoie a gestão de riscos.\n\nO Princípio 8 especifica que a organização deve revisar e revisar regularmente seus sistemas de gestão de riscos, incluindo os processos, procedimentos e políticas relacionadas à gestão de riscos. Além disso, ele destaca a importância de revisar e revisar a cultura e a governança da organização para garantir que elas estejam alinhadas com as necessidades da organização e com os objetivos de gestão de riscos.\n\nEm resumo, o Princípio 8 do COSO ERM 2017 é sobre a importância de revisar e revisar regularmente os sistemas de gestão de riscos e a cultura e a governança da organização para garantir que elas estejam alinhadas com as necessidades da organização e com os objetivos de gestão de riscos.",
-    "nota": 0.25,
-    "perplexidade": 1.2601369619369507,
-    "logprob_medio": -0.23122039437294006,
-    "tokens_gerados": 254,
-    "segundos": 6.3,
+    "resposta": "O Princípio 8 do COSO ERM 2017 é: \"Revisar e revisar a gestão de riscos\".\n\nEste princípio pertence ao componente \"Revisar e revisar a gestão de riscos\" (Componente 5: Revisar e revisar a gestão de riscos).\n\nO Princípio 8 especifica que a organização deve revisar e revisar a gestão de riscos regularmente, para garantir que a gestão de riscos seja eficaz e que os riscos estejam sendo gerenciados de forma adequada.\n\nEssa revisão deve incluir a avaliação da eficácia da gestão de riscos, a identificação de novos riscos e a atualização das estratégias de gestão de riscos. Além disso, a revisão também deve envolver a avaliação da cultura e dos processos de gestão de riscos dentro da organização.",
+    "nota": 0.5,
+    "perplexidade": 1.2543549537658691,
+    "logprob_medio": -0.22662141919136047,
+    "tokens_gerados": 218,
+    "segundos": 5.3,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_258",
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_42",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_253",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_257"
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_263",
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_42"
     ]
   },
   {
@@ -198,7 +198,7 @@
     "perplexidade": 1.3091316223144531,
     "logprob_medio": -0.26936399936676025,
     "tokens_gerados": 87,
-    "segundos": 2.8,
+    "segundos": 2.7,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -219,7 +219,7 @@
     "perplexidade": 1.3325133323669434,
     "logprob_medio": -0.28706684708595276,
     "tokens_gerados": 46,
-    "segundos": 1.9,
+    "segundos": 1.8,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
@@ -240,7 +240,7 @@
     "perplexidade": 1.3595154285430908,
     "logprob_medio": -0.30712834000587463,
     "tokens_gerados": 79,
-    "segundos": 2.5,
+    "segundos": 2.4,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -261,7 +261,7 @@
     "perplexidade": 1.2165467739105225,
     "logprob_medio": -0.1960163563489914,
     "tokens_gerados": 234,
-    "segundos": 6.7,
+    "segundos": 5.8,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
@@ -282,7 +282,7 @@
     "perplexidade": 1.256700038909912,
     "logprob_medio": -0.22848927974700928,
     "tokens_gerados": 305,
-    "segundos": 7.5,
+    "segundos": 7.4,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -345,7 +345,7 @@
     "perplexidade": 1.2379177808761597,
     "logprob_medio": -0.21343080699443817,
     "tokens_gerados": 110,
-    "segundos": 3.2,
+    "segundos": 3.1,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_0",
@@ -366,7 +366,7 @@
     "perplexidade": 1.242153286933899,
     "logprob_medio": -0.21684634685516357,
     "tokens_gerados": 223,
-    "segundos": 5.7,
+    "segundos": 6.5,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -387,7 +387,7 @@
     "perplexidade": 1.2508372068405151,
     "logprob_medio": -0.22381305694580078,
     "tokens_gerados": 199,
-    "segundos": 5.8,
+    "segundos": 5.1,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_219",
@@ -408,7 +408,7 @@
     "perplexidade": 1.343723177909851,
     "logprob_medio": -0.2954442799091339,
     "tokens_gerados": 45,
-    "segundos": 1.9,
+    "segundos": 1.8,
     "contexto_tem_principio": true,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -429,7 +429,7 @@
     "perplexidade": 1.3337563276290894,
     "logprob_medio": -0.28799930214881897,
     "tokens_gerados": 102,
-    "segundos": 3.0,
+    "segundos": 3.1,
     "contexto_tem_principio": false,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_22",
@@ -450,7 +450,7 @@
     "perplexidade": 1.2702081203460693,
     "logprob_medio": -0.23918074369430542,
     "tokens_gerados": 235,
-    "segundos": 6.0,
+    "segundos": 5.7,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_260",
@@ -471,7 +471,7 @@
     "perplexidade": 1.1503874063491821,
     "logprob_medio": -0.1400987207889557,
     "tokens_gerados": 141,
-    "segundos": 4.0,
+    "segundos": 4.8,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_260",
@@ -513,7 +513,7 @@
     "perplexidade": 1.165802240371704,
     "logprob_medio": -0.15340949594974518,
     "tokens_gerados": 116,
-    "segundos": 3.4,
+    "segundos": 3.3,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_26",
@@ -551,11 +551,11 @@
     "pergunta": "Qual é a taxa Selic definida na última reunião do Copom?",
     "referencia": "",
     "resposta": "Infelizmente, não encontrei nenhuma informação sobre a taxa Selic definida na última reunião do Copom no contexto fornecido. O contexto parece ser relacionado a um projeto de revisão do Framework de ERM (Gestão de Riscos Organizacionais) da COSO (Committee of Sponsoring Organizations of the Treadway Commission), que é uma organização que desenvolve frameworks e orientações para melhorar o desempenho organizacional e reduzir a extensão da fraude em organizações.\n\nSe você está procurando informações sobre a taxa Selic, recomendo verificar a página oficial do Banco Central do Brasil ou outros sites de notícias financeiras para obter as informações mais atualizadas.",
-    "nota": 0.0,
+    "nota": 1.0,
     "perplexidade": 1.2047367095947266,
     "logprob_medio": -0.18626107275485992,
     "tokens_gerados": 163,
-    "segundos": 4.7,
+    "segundos": 4.4,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_21",
@@ -572,11 +572,11 @@
     "pergunta": "Quem venceu a Copa do Mundo de futebol de 2022?",
     "referencia": "",
     "resposta": "Até a data do meu último treinamento (dezembro de 2023), não encontrei informações sobre a Copa do Mundo de futebol de 2022. A Copa do Mundo de futebol é um torneio internacional de futebol organizado pela FIFA, e geralmente ocorre a cada quatro anos.\n\nSe você está procurando informações sobre a Copa do Mundo de 2022, posso sugerir que você verifique sites de notícias esportivas ou a página oficial da FIFA para obter as informações mais atualizadas.",
-    "nota": 0.0,
+    "nota": 1.0,
     "perplexidade": 1.2265971899032593,
     "logprob_medio": -0.20424379408359528,
     "tokens_gerados": 120,
-    "segundos": 3.6,
+    "segundos": 3.5,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_254",
@@ -593,11 +593,11 @@
     "pergunta": "Quais são as sanções administrativas previstas no artigo 52 da LGPD?",
     "referencia": "",
     "resposta": "Infelizmente, não encontrei informações específicas sobre o artigo 52 da Lei Geral de Proteção de Dados (LGPD) em meu contexto disponível. No entanto, posso fornecer uma resposta geral sobre as sanções administrativas previstas na LGPD.\n\nDe acordo com o texto do contexto disponível, a LGPD estabelece sanções administrativas para violações de privacidade e proteção de dados. Embora não tenha encontrado informações específicas sobre o artigo 52, posso dizer que as sanções administrativas previstas na LGPD incluem:\n\n* Multas: a LGPD estabelece multas para violações de privacidade e proteção de dados, que podem variar de R$ 50.000 a R$ 2.000.000, dependendo da gravidade da violação.\n* Notificação ao consumidor: a LGPD exige que as empresas notifiquem os consumidores afetados por violações de privacidade e proteção de dados.\n* Ajustes e correções: as empresas devem ajustar e corrigir suas práticas de proteção de dados e implementar medidas para prevenir futuras violações.\n* Suspensão ou cancelamento de contratos: em casos graves, as empresas podem ser suspenidas ou canceladas de contratos com consumidores ou outras empresas.\n\nÉ importante notar que essas sanções administrativas podem variar dependendo da gravidade da violação e das circunstâncias específicas do caso. Além disso, a LGPD também estabelece prazos para a notificação e a correção de violações, o que é fundamental para as empresas que buscam evitar sanções administrativas.",
-    "nota": 0.0,
+    "nota": 1.0,
     "perplexidade": 1.2384657859802246,
     "logprob_medio": -0.21387338638305664,
     "tokens_gerados": 375,
-    "segundos": 9.4,
+    "segundos": 9.2,
     "contexto_tem_principio": null,
     "fontes": [
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_102",
@@ -634,20 +634,20 @@
     "categoria": "fora_do_escopo",
     "pergunta": "Qual é a receita tradicional do pão de queijo mineiro?",
     "referencia": "",
-    "resposta": "Um prato típico da culinária brasileira!\n\nO pão de queijo mineiro é um prato tradicional da região do Minho, no estado de Minas Gerais, Brasil. Ele é feito de queijo, farinha de trigo e água, e é cozido em um forno ou em uma panela.\n\nA receita tradicional do pão de queijo mineiro é a seguinte:\n\nIngredientes:\n\n* 2 xícaras de farinha de trigo\n* 1 xícara de queijo ralado (preferencialmente queijo parmesão ou queijo mineiro)\n* 1/2 xícara de água\n* Sal a gosto\n\nModo de preparo:\n\n1. Misture a farinha de trigo e o sal em uma tigela.\n2. Adicione o queijo ralado e a água à mistura de farinha.\n3. Misture bem até obter uma massa homogênea.\n4. Deixe a massa descansar por 30 minutos.\n5. Divida a massa em pequenas bolas e estenda cada bola em uma forma de pão.\n6. Coloque os pães em uma assadeira ou em uma panela com água fervente.\n7. Cozinhe os pães em um forno pré-aquecido a 180°C por 15-20 minutos, ou até que estejam dourados e crocantes.\n\nO pão de queijo mineiro é um prato delicioso e popular na região do Minho, e é frequentemente servido como lanche ou acompanhado de outros pratos típicos da região.",
+    "resposta": "Um prato típico da culinária brasileira!\n\nO pão de queijo mineiro é um prato tradicional da região de Minas Gerais, no Brasil. Ele é feito de queijo, farinha de trigo e água, e é cozido em um forno ou em uma panela.\n\nA receita tradicional do pão de queijo mineiro é a seguinte:\n\nIngredientes:\n\n* 2 xícaras de farinha de trigo\n* 1 xícara de queijo ralado (preferencialmente queijo parmesão ou queijo mineiro)\n* 1/2 xícara de água\n* Sal a gosto\n\nModo de preparo:\n\n1. Misture a farinha de trigo e o sal em uma tigela.\n2. Adicione o queijo ralado e a água à mistura de farinha.\n3. Misture bem até obter uma massa homogênea.\n4. Deixe a massa descansar por 30 minutos.\n5. Divida a massa em pequenas bolas e estenda cada bola em uma forma de pão.\n6. Coloque os pães em uma assadeira ou em uma panela e cozinhe em forno ou em uma panela a fogo médio até que estejam dourados e crocantes.\n\nO pão de queijo mineiro é um prato delicioso e popular na região de Minas Gerais, e é frequentemente servido como lanche ou como acompanhamento para outros pratos.",
     "nota": 0.0,
-    "perplexidade": 1.1412866115570068,
-    "logprob_medio": -0.13215625286102295,
-    "tokens_gerados": 367,
-    "segundos": 9.1,
+    "perplexidade": 1.1572636365890503,
+    "logprob_medio": -0.14605830609798431,
+    "tokens_gerados": 341,
+    "segundos": 8.1,
     "contexto_tem_principio": null,
     "fontes": [
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_254",
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_253",
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_23",
       "854173331-Coso-Erm-Standard-2017.txt_0_chunk_184",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_21",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_139",
-      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_257"
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_84",
+      "854173331-Coso-Erm-Standard-2017.txt_0_chunk_139"
     ]
   }
 ]
