@@ -12,7 +12,7 @@ Projeto da disciplina **Inteligência Artificial** (7ºK, noite, Sistemas de Inf
 
 - **Relatório final (N2):** [`Relatorio_N2_Agente_Especialista_GRC.pdf`](Relatorio_N2_Agente_Especialista_GRC.pdf) (versão editável em `.docx`)
 - **Relatório N1:** [`Relatorio_N1_Agente_Especialista_GRC.pdf`](Relatorio_N1_Agente_Especialista_GRC.pdf)
-- **Vídeo de apresentação:** _[inserir o link do YouTube]_
+- **Vídeo de apresentação:** https://youtu.be/yG522ogJRS0
 
 ## Dataset
 
